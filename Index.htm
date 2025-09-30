@@ -3,36 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceso a Roblox</title>
+    <title>Descargar Roblox Player</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin-top: 50px;
         }
-        #proxyFrame {
-            width: 100%;
-            height: 800px;
-            border: 2px solid #000;
+        #downloadButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>Acceso a Roblox</h1>
-    <p>Usa este proxy para acceder a Roblox sin restricciones.</p>
-    <iframe id="proxyFrame" src="https://www.roblox.com" sandbox="allow-scripts allow-same-origin allow-popups allow-forms"></iframe>
+    <h1>Descargar Roblox Player</h1>
+    <p>Haz clic en el botón a continuación para descargar Roblox Player.</p>
+    <button id="downloadButton">Descargar Roblox Player</button>
 
     <script>
-        // Función para detectar si el iframe ha cargado correctamente
-        function checkIframeLoad() {
-            const iframe = document.getElementById('proxyFrame');
-            iframe.onload = function() {
-                alert('Roblox ha cargado exitosamente!');
-            };
-        }
-
-        // Llamar a la función para verificar el cargado del iframe
-        checkIframeLoad();
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            // Redirigir a la página de descarga de Roblox utilizando un proxy
+            window.location.href = 'https://proxy.example.com/https://www.roblox.com/download';
+        });
     </script>
 </body>
 </html>
